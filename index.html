@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hamburger.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">DOMŮ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_2">SLUŽBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_3">REFERENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_4">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
 </body>
 </html>
