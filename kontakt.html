@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i><a href="tel:+420777666666">+420 777 666 666</a></li>
+                <li><i class="fa-regular fa-envelope"></i><a href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></li>
+            </ul>
+            <ul>
+                <li><i class="fa-regular fa-circle-user"></i><a href="#">Přihlášení</a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_2">Funkce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_3">Podpora</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_4">Ceník</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <h1>Kontakt</h1>
+        <div>
+            <i class="fa-regular fa-house"></i>
+            <a href="#">Úvod</a>
+            <div></div>
+            <a href="#">Kontakt</a>
+        </div>
+        <section>
+            <figure>
+                <img>
+                <figcaption>
+                    <h2>Honza</h2>
+                    <p>lorem ipsum</p>
+                    <a href="emailto:honza@logoipsum.cz">honza@logoipsum.cz</a>
+                    <a href="phoneto:777 666 000">777 666 000</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img>
+                <figcaption>
+                    <h2>Tomáš</h2>
+                    <p>lorem ipsum</p>
+                    <a href="emailto:tomáš@logoipsum.cz">tomáš@logoipsum.cz</a>
+                    <a href="phoneto:987 456 321">987456321</a>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h2>Fakturační údaje</h2>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
