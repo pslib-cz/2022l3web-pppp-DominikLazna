@@ -1,15 +1,3 @@
-@media (max-width: 768px) {
-    .navbar__menu--hidden {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar__hamburger {
-        display: none;
-    }
-}
-
 .navbar {
     position: relative;
     z-index: 1;
@@ -29,4 +17,5 @@
 
 .hamburger-menu::after {
     content: url(./svgs/hamburger.svg);
+    z-index: 1;
 }

@@ -1,0 +1,153 @@
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    --orange-color: rgb(245, 132, 31);
+    --lightgray-color: rgb(245, 245, 245);
+    --lightblue-color: rgb(241, 249, 252);
+    --darkblue-color: rgb(45, 66, 117);
+}
+
+*, *:visited {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+section {
+    padding: 32px 16px 0 16px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.header > div {
+    background-color: var(--lightgray-color);
+}
+
+.header__upper-section {
+    padding: 1rem 0;
+    margin: 0 16px 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar {
+    margin: 0px 16px;
+}
+
+.navbar__menu {
+    position: absolute;
+    width: 100vw;
+    top: -8px;
+    left: -16px;
+    text-align: center;
+    background-color: var(--lightgray-color);
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: .1s;
+}
+
+.navbar__menu--hidden {
+    transform: scaleY(0);
+}
+
+.nav__item {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.header__text {
+    display: none;
+}
+
+.úvod__img {
+    margin: 16px 0;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.úvod__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.úvod__výhody {
+    margin: 1rem 0;
+}
+
+.úvod__tick {
+    margin-right: 1rem;
+}
+
+.úvod__sponzoři {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.button {
+    display: block;
+    width: max-content;
+    color: white;
+    background-color: var(--orange-color);
+    padding: 1rem 1.5rem;
+    border-radius: 24px;
+    margin: 32px auto;
+}
+
+.výhody {
+    background-color: var(--lightblue-color);
+}
+
+.výhody__item > img {
+    display: block;
+    width: 120px;
+    margin: 2rem auto;
+}
+
+.výhody__caption {
+    text-align: center;
+    font-weight: bold;
+    color: var(--darkblue-color);
+}
+
+.slider {
+    box-sizing: border-box;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+}
+
+.card {
+    box-sizing: border-box;
+    flex: 0 0 328px;
+    padding: 2rem;
+    background-color: white;
+}
+
+.card__heading {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.card__caption {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.orange {
+    color: var(--orange-color);
+}

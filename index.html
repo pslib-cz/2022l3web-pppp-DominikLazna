@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e911d031db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="./hamburger.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Logoipsum</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="header">
         <div>
-            <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+420777666666">+420 777 666 666</a></li>
-                <li><i class="fa-regular fa-envelope"></i><a href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></li>
-            </ul>
-            <ul>
-                <li><i class="fa-regular fa-circle-user"></i><a href="#">Přihlášení</a></li>
-            </ul>
+            <div class="header__upper-section">
+                <ul class="header__contacts">
+                    <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header__text">+420 777 666 666</span></a></li>
+                    <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header__text">obchod@l3web.cz</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                </ul>
+            </div>
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Úvod</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Úvod</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_2">Funkce</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_2">Funkce</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_3">Podpora</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Podpora</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_4">Ceník</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Ceník</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_5">Kontakt</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_5">Kontakt</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
                 </li>
             </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
         </nav>
         <script>
             const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
@@ -63,19 +70,21 @@
         </script>
     </header>
     <main>
-        <section>
+        <section class="úvod">
             <div>
-                <div>
-                    <h1><span>Řízení školy</span> ještě nebylo jednodušší</h1>
-                    <p>Představujeme Software pro <span>řízení lidských zdrojů ve škole nebylo efektivnější</span></p>
-                    <p><i class="fa-solid fa-check"></i>Počítá mzdové náklady</p>
-                    <p><i class="fa-solid fa-check"></i>Generuje lidi</p>
-                    <p><i class="fa-solid fa-check"></i>Tvoří budoucnost</p>
-                    <a href="#">Vyzkoušejte demo</a>
+                <div class="úvod__img"><img src="./imgs/headway-5QgIuuBxKwM-unsplash.jpg"></div>
+                <div class="úvod__popis">
+                    <h1 class="úvod__heading"><span class="orange">Řízení školy</span> ještě nebylo jednodušší</h1>
+                    <p>Představujeme Software pro <strong>řízení lidských zdrojů ve škole nebylo efektivnější</strong></p>
+                    <ul class="úvod__výhody">
+                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Počítá mzdové náklady</li>
+                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Generuje lidi</li>
+                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Tvoří budoucnost</li>
+                    </ul>
+                    <a class="button" href="#">Vyzkoušejte demo</a>
                 </div>
-                <div></div>
             </div>
-            <div>
+            <div class="úvod__sponzoři">
                 <img src="./svgs/Logo4.svg" alt="">
                 <img src="./svgs/Logo6.svg" alt="">
                 <img src="./svgs/Logo2.svg" alt="">
@@ -83,42 +92,42 @@
                 <img src="./svgs/Logo1.svg" alt="">
             </div>
         </section>
-        <section>
+        <section class="výhody">
             <h2>Výhody řešení</h2>
             <div>
-                <div>
-                    <i class="fa-sharp fa-regular fa-hourglass-half"></i>
-                    <p>Zkracuje čas práce díky velkému množství funkcí</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-people-group"></i>
-                    <p>Poskytuje selektivní přístup všem pracovníkům</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-arrows-cross"></i>
-                    <p>Umožňuje outsourcing personalistických procesů</p>
-                </div>
-                <div>
-                    <i class="fa-regular fa-ballot-check"></i>
-                    <p>zaručuje splnění požadavků ISO a IATF</p>
-                </div>
+                <figure class="výhody__item">
+                    <img src="./svgs/výhody/hodiny.svg" alt="Vektorový obrázek přesýpacích hodin">
+                    <figcaption class="výhody__caption"><span class="orange">Zkracuje čas práce</span> díky velkému množství funkcí</figcaption>
+                </figure>
+                <figure class="výhody__item">
+                    <img src="./svgs/výhody/kontakty.svg" alt="Vektorový obrázek dvou lidí v rámečku">
+                    <figcaption class="výhody__caption">Poskytuje selektivní přístup všem pracovníkům</figcaption>
+                </figure>
+                <figure class="výhody__item">
+                    <img src="./svgs/výhody/outsourcing.svg" alt="Vektorový obrázek dvou šipek jdoucích proti sobě">
+                    <figcaption class="výhody__caption">Umožňuje outsourcing personalistických procesů</figcaption>
+                </figure>
+                <figure class="výhody__item">
+                    <img src="./svgs/výhody/požadavky.svg" alt="Vektorový obrázek checklistu">
+                    <figcaption class="výhody__caption">Zaručuje splnění požadavků ISO a IATF</figcaption>
+                </figure>
             </div>
-            <div>
-                <div>
-                    <p>Administrace aplikace</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui libero voluptatum? Nobis inventore, rem repellat commodi nam voluptatibus, recusandae doloribus sunt debitis, est facere harum deserunt labore officia earum!</p>
+            <div class="slider">
+                <div class="slider__item card">
+                    <p class="card__heading">Administrace aplikace</p>
+                    <p class="card__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui libero voluptatum? Nobis inventore, rem repellat commodi nam voluptatibus, recusandae doloribus sunt debitis, est facere harum deserunt labore officia earum!</p>
                 </div>
-                <div>
-                    <p>Tvorba organizační struktury</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo sunt velit corporis aperiam nostrum fugiat quas numquam dolorem, iure excepturi nemo officia odio, magnam eaque culpa nisi, et maxime!</p>
+                <div class="slider__item card">
+                    <p class="card__heading">Tvorba organizační struktury</p>
+                    <p class="card__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo sunt velit corporis aperiam nostrum fugiat quas numquam dolorem, iure excepturi nemo officia odio, magnam eaque culpa nisi, et maxime!</p>
                 </div>
-                <div>
-                    <p>Popisy pracovních míst</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sequi animi dolorem placeat possimus obcaecati dignissimos doloribus, voluptatem ratione vero tenetur quam beatae veritatis dolores atque ea quasi saepe tempore.</p>
+                <div class="slider__item card">
+                    <p class="card__heading">Popisy pracovních míst</p>
+                    <p class="card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sequi animi dolorem placeat possimus obcaecati dignissimos doloribus, voluptatem ratione vero tenetur quam beatae veritatis dolores atque ea quasi saepe tempore.</p>
                 </div>
-                <div>
-                    <p>Firemní procesy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut, laborum alias accusamus cum dolorem sit temporibus sunt, nisi quas quo officiis corporis doloribus nostrum ullam? Expedita facere odio consequuntur?</p>
+                <div class="slider__item card">
+                    <p class="card__heading">Firemní procesy</p>
+                    <p class="card__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut, laborum alias accusamus cum dolorem sit temporibus sunt, nisi quas quo officiis corporis doloribus nostrum ullam? Expedita facere odio consequuntur?</p>
                 </div>
             </div>
             <div></div>
