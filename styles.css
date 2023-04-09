@@ -141,7 +141,6 @@ div > img {
 }
 
 .card__heading {
-    font-weight: bold;
     margin-bottom: 2rem;
 }
 
@@ -172,13 +171,34 @@ div > img {
 }
 
 .uživatel__jméno {
-    font-weight: bold;
-    font-size: 1.1rem;
     margin-top: 16px;
 }
 
 .uživatel__zaměstnání {
     font-style: italic;
+}
+
+.aktuality {
+    background-color: var(--lightgray-color);
+}
+
+.aktuality__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.aktualita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .orange {
