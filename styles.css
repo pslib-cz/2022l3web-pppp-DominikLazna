@@ -3,7 +3,9 @@
     --orange-color: rgb(245, 132, 31);
     --lightgray-color: rgb(245, 245, 245);
     --lightblue-color: rgb(241, 249, 252);
-    --darkblue-color: rgb(45, 66, 117);
+    --blue-color: rgb(45, 66, 117);
+    --darkblue-color: rgb(22, 33, 60);
+    --skyblue-color: rgb(142, 202, 230);
 }
 
 *, *:visited {
@@ -13,7 +15,7 @@
     list-style: none;
 }
 
-section {
+section, footer {
     padding: 32px 16px;
 }
 
@@ -98,6 +100,9 @@ div > img {
     margin-top: 32px;
 }
 
+.úvod__sponzoři > img {
+    width: 50%;
+}
 
 .button {
     display: block;
@@ -122,7 +127,7 @@ div > img {
 .výhody__caption {
     text-align: center;
     font-weight: bold;
-    color: var(--darkblue-color);
+    color: var(--blue-color);
 }
 
 .slider {
@@ -199,6 +204,33 @@ div > img {
 .heading {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.footer, .footer a {
+    text-align: center;
+    color: var(--skyblue-color);
+    background-color: var(--darkblue-color);
+}
+
+.footer__heading {
+    margin-top: 32px;
+}
+
+.footer__item {
+    margin: 8px 0;
+}
+
+.footer__contact {
+    display: block;
+}
+
+.footer__end-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 32px;
+    margin-top: 32px;
+    border-top: 1px solid var(--skyblue-color);
 }
 
 .orange {
