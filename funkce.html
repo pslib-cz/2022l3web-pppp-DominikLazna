@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e911d031db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="./hamburger.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="header">
         <div>
-            <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+420777666666">+420 777 666 666</a></li>
-                <li><i class="fa-regular fa-envelope"></i><a href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></li>
-            </ul>
-            <ul>
-                <li><i class="fa-regular fa-circle-user"></i><a href="#">Přihlášení</a></li>
-            </ul>
+            <div class="header__upper-section">
+                <ul class="header__contacts">
+                    <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header__text">+420 777 666 666</span></a></li>
+                    <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header__text">obchod@l3web.cz</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                </ul>
+            </div>
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Úvod</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Úvod</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_2">Funkce</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_2">Funkce</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_3">Podpora</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Podpora</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_4">Ceník</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Ceník</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_5">Kontakt</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_5">Kontakt</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
                 </li>
             </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
         </nav>
         <script>
             const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
@@ -63,67 +70,72 @@
         </script>
     </header>
     <main>
-        <h1>Funkce</h1>
-        <div>
-            <i class="fa-regular fa-house"></i>
-            <a href="#">Úvod</a>
-            <div></div>
-            <a href="#">Funkce</a>
+        <div class="page-header">
+            <h1>Funkce</h1>
+            <div class="page-header__nav">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Úvod</a>
+                <div class="page-header__dot"></div>
+                <a href="#">Funkce</a>
+            </div>
         </div>
-        <div>
+        <div class="funkce-header">
             <div>
                 <h2>Seznam funkcí aplikace</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quae officiis excepturi culpa, explicabo eligendi mollitia aperiam alias, facere optio ullam eaque veritatis repudiandae, quaerat nemo quo quod placeat. Dolores!</p>
             </div>
-            <img src="./svgs/Play.svg" alt="Tlačítko pro přehrání videotutoriálu">
+            <div>
+                <a class="funkce-header__tutoriály" href=""><img src="./svgs/Play.svg" alt="Tlačítko pro přehrání videotutoriálu"></a>
+                <p>Videotutoriály</p>
+            </div>
         </div>
-        <section>
-            <article>
-                <h3>Administrace aplikace</h3>
+        <section class="slider funkce-slider">
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Administrace aplikace</h3>
+            <article class="card funkce-slider__card">
+                <h3 class="orange">Administrace aplikace</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
         </section>
@@ -135,7 +147,6 @@
             <p>nebo</p>
             <a href="#">Zavolejte nám</a>
         </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.402173395545!2d14.982026834328401!3d50.83268981405642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47093084baa285ed%3A0xb2d25ad4e156ca84!2s463%2031%20Chrastava!5e1!3m2!1scs!2scz!4v1678699981934!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <div>
