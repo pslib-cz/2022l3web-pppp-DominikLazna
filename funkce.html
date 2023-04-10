@@ -139,56 +139,56 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
         </section>
-        <section>
-            <h2>Máte dotaz k chování aplikace?</h2>
+        <section class="feedback">
+            <h2>Máte dotaz <span class="orange">k chování aplikace?</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores, in, numquam laudantium minus tempora porro perspiciatis obcaecati eius ab minima, molestias veritatis optio? Incidunt ipsa obcaecati molestiae consequatur nam!</p>
-            <a href="emailto:podpora@l3web.cz">podpora@l3web.cz</a>
-            <a href="#">Napište nám e-mail</a>
+            <a class="feedback__email" href="emailto:podpora@l3web.cz">podpora@l3web.cz</a>
+            <a class="button button--bottom-margin" href="#">Napište nám e-mail</a>
             <p>nebo</p>
-            <a href="#">Zavolejte nám</a>
+            <a class="button button--alternative" href="#">Zavolejte nám</a>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="./svgs/Logo5.svg" alt="Logo společnosti">
-                <p>Pslib.cz s.r.o.</p>
-                <p>Masarykova 12345</p>
-                <p>460 00 Liberec</p>
-                <p><i class="fa-solid fa-phone"></i>+420 777 666 666</p>
-                <p><i class="fa-regular fa-envelope"></i></p>
-            </div>
-            <div>
-                <h2>Videotutoriály</h2>
-                <a href="#">CSS</a>
-                <a href="#">Animace</a>
-                <a href="#">Stříhání videa</a>
-                <a href="#">Výběr barev</a>
-                <a href="#">Plánování pracovníků a mezd</a>
-                <a href="#">Všechna videa</a>
-            </div>
-            <div>
-                <h2>Podpora</h2>
-                <a href="#">Přihlášení k účtu</a>
-                <a href="#">Školení</a>
-                <a href="#">FAQ - Časté dotazy</a>
-                <a href="#">Kontakty</a>
-                <a href="#">Videotutoriály</a>
-            </div>
-            <div>
-                <h2>Menu</h2>
-                <a href="#">Úvod</a>
-                <a href="#">Funkce</a>
-                <a href="#">Podpora</a>
-                <a href="#">Ceník</a>
-                <a href="#">Kontakt</a>
-            </div>
+    <footer class="footer">
+        <div class="footer_nav">
+            <ul class="footer__column">
+                <img src="./svgs/LogoBlueVariant.svg" alt="Logo společnosti">
+                <p class="footer__item">Pslib.cz s.r.o.</p>
+                <p class="footer__item">Masarykova 12345</p>
+                <p class="footer__item">460 00 Liberec</p>
+                <a class="footer__contact footer__item" href="tel:+420777666666"><i class="fa-solid fa-phone"></i>+420 777 666 666</a>
+                <a class="footer__contact footer__item" href="mailto:info@l3web.cz"><i class="fa-regular fa-envelope"></i>info@l3web.cz</a>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Videotutoriály</h2>
+                <li class="footer__item"><a href="#">CSS</a></li>
+                <li class="footer__item"><a href="#">Animace</a></li>
+                <li class="footer__item"><a href="#">Stříhání videa</a></li>
+                <li class="footer__item"><a href="#">Výběr barev</a></li>
+                <li class="footer__item"><a href="#">Plánování pracovníků a mezd</a></li>
+                <li class="footer__item"><a href="#">Všechna videa</a></li>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Podpora</h2>
+                <li class="footer__item"><a href="#">Přihlášení k účtu</a></li>
+                <li class="footer__item"><a href="#">Školení</a></li>
+                <li class="footer__item"><a href="#">FAQ - Časté dotazy</a></li>
+                <li class="footer__item"><a href="#">Kontakty</a></li>
+                <li class="footer__item"><a href="#">Videotutoriály</a></li>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Menu</h2>
+                <li class="footer__item"><a href="#">Úvod</a></li>
+                <li class="footer__item"><a href="#">Funkce</a></li>
+                <li class="footer__item"><a href="#">Podpora</a></li>
+                <li class="footer__item"><a href="#">Ceník</a></li>
+                <li class="footer__item"><a href="#">Kontakt</a></li>
+            </ul>
         </div>
-        <div>
-            <p>© Copyright 2023 - Pslib.cz s.r.o.</p>
-            <a href="#">Cookies</a>
-            <a href="#">Podmínky užití</a>
-            <p>Vyrobilo: B interactive</p>
+        <div class="footer__end-section">
+                <p>© Copyright 2023 Pslib.cz s.r.o.</p>
+                <a href="#">Cookies</a>
+                <a href="#">Podmínky užití</a>
+                <p>Vyrobilo: B interactive</p>
         </div>
     </footer>
 </body>

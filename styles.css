@@ -9,6 +9,7 @@
 }
 
 *, *:visited {
+    color: var(--darkblue-color);
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -106,12 +107,24 @@ div > img {
 
 .button {
     display: block;
+    box-sizing: border-box;
     width: max-content;
+    font-weight: bold;
     color: white;
     background-color: var(--orange-color);
     padding: 1rem 1.5rem;
-    border-radius: 24px;
+    border: 5px solid var(--orange-color);
+    border-radius: 32px;
     margin: 32px auto 0 auto;
+}
+
+.button--bottom-margin {
+    margin-bottom: 32px;
+}
+
+.button--alternative {
+    color: var(--darkblue-color);
+    background-color: white;
 }
 
 .výhody {
@@ -206,7 +219,7 @@ div > img {
     font-size: 1.1rem;
 }
 
-.footer, .footer a {
+.footer, .footer * {
     text-align: center;
     color: var(--skyblue-color);
     background-color: var(--darkblue-color);
@@ -274,6 +287,16 @@ div > img {
     position: absolute;
     bottom: -20px;
     left: 32px;
+}
+
+.feedback {
+    text-align: center;
+}
+
+.feedback__email {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
 }
 
 .orange {
