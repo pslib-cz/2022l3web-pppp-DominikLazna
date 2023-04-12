@@ -58,4 +58,14 @@
         justify-content: center;
         gap: 35%;
     }
+
+    .funkce-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .funkce-header__caption > * {
+        text-align: left;
+    }
 }
