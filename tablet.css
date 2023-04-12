@@ -1,0 +1,47 @@
+@media only screen and (min-width: 700px) {
+    .úvod__sponzoři {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .výhody__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .výhody__item {
+        flex: 0 0 50%;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .uživatel {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .uživatel .img-portrét {
+        flex: 1 0 150px;
+    }
+
+    .uživatel__caption {
+        flex: 0 1 auto;
+        text-align: left;
+    }
+
+    .aktualita {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .aktualita__caption {
+        text-align: left;
+        margin-top: -16px;
+    }
+}

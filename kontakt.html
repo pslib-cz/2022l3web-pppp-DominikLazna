@@ -4,42 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e911d031db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./hamburger.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="header">
         <div>
-            <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+420777666666">+420 777 666 666</a></li>
-                <li><i class="fa-regular fa-envelope"></i><a href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></li>
-            </ul>
-            <ul>
-                <li><i class="fa-regular fa-circle-user"></i><a href="#">Přihlášení</a></li>
-            </ul>
+            <div class="header__upper-section">
+                <ul class="header__contacts">
+                    <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header__text">+420 777 666 666</span></a></li>
+                    <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header__text">obchod@l3web.cz</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                </ul>
+            </div>
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Úvod</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Úvod</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_2">Funkce</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="funkce.html">Funkce</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_3">Podpora</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Podpora</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_4">Ceník</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Ceník</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section_5">Kontakt</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="kontakt.html">Kontakt</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
                 </li>
             </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
         </nav>
         <script>
             const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
@@ -70,7 +79,7 @@
         </div>
         <section>
             <figure>
-                <img>
+                <img src="./imgs/portréty/Honza.jpg" alt="Portrét Honzy">
                 <figcaption>
                     <h2>Honza</h2>
                     <p>lorem ipsum</p>
@@ -79,7 +88,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <img>
+                <img src="./imgs/portréty/Tomáš.jpg" alt="Portrét Tomáše">
                 <figcaption>
                     <h2>Tomáš</h2>
                     <p>lorem ipsum</p>
@@ -94,5 +103,48 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer_nav">
+            <ul class="footer__column">
+                <img src="./svgs/LogoBlueVariant.svg" alt="Logo společnosti">
+                <p class="footer__item">Pslib.cz s.r.o.</p>
+                <p class="footer__item">Masarykova 12345</p>
+                <p class="footer__item">460 00 Liberec</p>
+                <a class="footer__contact footer__item" href="tel:+420777666666"><i class="fa-solid fa-phone"></i>+420 777 666 666</a>
+                <a class="footer__contact footer__item" href="mailto:info@l3web.cz"><i class="fa-regular fa-envelope"></i>info@l3web.cz</a>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Videotutoriály</h2>
+                <li class="footer__item"><a href="#">CSS</a></li>
+                <li class="footer__item"><a href="#">Animace</a></li>
+                <li class="footer__item"><a href="#">Stříhání videa</a></li>
+                <li class="footer__item"><a href="#">Výběr barev</a></li>
+                <li class="footer__item"><a href="#">Plánování pracovníků a mezd</a></li>
+                <li class="footer__item"><a href="#">Všechna videa</a></li>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Podpora</h2>
+                <li class="footer__item"><a href="#">Přihlášení k účtu</a></li>
+                <li class="footer__item"><a href="#">Školení</a></li>
+                <li class="footer__item"><a href="#">FAQ - Časté dotazy</a></li>
+                <li class="footer__item"><a href="#">Kontakty</a></li>
+                <li class="footer__item"><a href="#">Videotutoriály</a></li>
+            </ul>
+            <ul class="footer__column">
+                <h2 class="footer__heading">Menu</h2>
+                <li class="footer__item"><a href="#">Úvod</a></li>
+                <li class="footer__item"><a href="#">Funkce</a></li>
+                <li class="footer__item"><a href="#">Podpora</a></li>
+                <li class="footer__item"><a href="#">Ceník</a></li>
+                <li class="footer__item"><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer__end-section">
+                <p>© Copyright 2023 Pslib.cz s.r.o.</p>
+                <a href="#">Cookies</a>
+                <a href="#">Podmínky užití</a>
+                <p>Vyrobilo: B interactive</p>
+        </div>
+    </footer>
 </body>
 </html>

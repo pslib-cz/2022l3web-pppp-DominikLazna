@@ -17,7 +17,7 @@
 }
 
 section, footer {
-    padding: 32px 16px;
+    padding: 32px 5%;
 }
 
 h2 {
@@ -35,7 +35,7 @@ h3 {
 
 .header__upper-section {
     padding: 1rem 0;
-    margin: 0 16px 8px 16px;
+    margin: 0 5% 8px 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -46,7 +46,7 @@ h3 {
 }
 
 .navbar {
-    margin: 0px 16px;
+    margin: 0px 5%;
 }
 
 .navbar__menu {
@@ -102,7 +102,7 @@ div > img {
 }
 
 .úvod__sponzoři > img {
-    width: 50%;
+    width: min-content;
 }
 
 .button {
@@ -200,18 +200,14 @@ div > img {
     background-color: var(--lightgray-color);
 }
 
-.aktuality__container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.aktualita {
+    margin-top: 32px;
+    text-align: center;
 }
 
-.aktualita {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
+.aktualita__caption > * {
+    display: block;
+    margin-top: 16px;
 }
 
 .heading {
