@@ -25,6 +25,10 @@
         gap: 16px;
     }
 
+    .uživatel--kontakt {
+        display: block;
+    }
+
     .uživatel .img-portrét {
         flex: 1 0 150px;
     }
@@ -32,6 +36,10 @@
     .uživatel__caption {
         flex: 0 1 auto;
         text-align: left;
+    }
+
+    .uživatel__caption--kontakt {
+        text-align: center;
     }
 
     .aktualita {
@@ -43,5 +51,11 @@
     .aktualita__caption {
         text-align: left;
         margin-top: -16px;
+    }
+
+    .section-nopadding {
+        display: flex;
+        justify-content: center;
+        gap: 35%;
     }
 }
