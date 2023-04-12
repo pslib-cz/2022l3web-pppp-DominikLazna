@@ -70,37 +70,44 @@
         </script>
     </header>
     <main>
-        <h1>Kontakt</h1>
-        <div>
-            <i class="fa-regular fa-house"></i>
-            <a href="#">Úvod</a>
-            <div></div>
-            <a href="#">Kontakt</a>
+        <div class="page-header">
+            <h1>Kontakt</h1>
+            <div class="page-header__nav">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Úvod</a>
+                <div class="page-header__dot"></div>
+                <a href="#">Kontakt</a>
+            </div>
         </div>
-        <section>
-            <figure>
-                <img src="./imgs/portréty/Honza.jpg" alt="Portrét Honzy">
-                <figcaption>
-                    <h2>Honza</h2>
+        <section class="section-nopadding">
+            <figure class="uživatel">
+                <div class="img-portrét"><img src="./imgs/portréty/Honza.jpg" alt="Portrét Honzy"></div>
+                <figcaption class="uživatel__caption">
+                    <p class="uživatel__jméno heading">Honza</p>
                     <p>lorem ipsum</p>
-                    <a href="emailto:honza@logoipsum.cz">honza@logoipsum.cz</a>
-                    <a href="phoneto:777 666 000">777 666 000</a>
+                    <a class="uživatel__kontakt" href="emailto:honza@logoipsum.cz">honza@logoipsum.cz</a>
+                    <a class="uživatel__kontakt" href="phoneto:777 666 000">777 666 000</a>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="./imgs/portréty/Tomáš.jpg" alt="Portrét Tomáše">
-                <figcaption>
-                    <h2>Tomáš</h2>
+            <figure class="uživatel">
+                <div class="img-portrét"><img src="./imgs/portréty/Tomáš.jpg" alt="Portrét Tomáše"></div>
+                <figcaption class="uživatel__caption">
+                    <p class="uživatel__jméno heading">Tomáš</p>
                     <p>lorem ipsum</p>
-                    <a href="emailto:tomáš@logoipsum.cz">tomáš@logoipsum.cz</a>
-                    <a href="phoneto:987 456 321">987456321</a>
+                    <a class="uživatel__kontakt" href="emailto:tomáš@logoipsum.cz">tomáš@logoipsum.cz</a>
+                    <a class="uživatel__kontakt" href="phoneto:987 456 321">987456321</a>
                 </figcaption>
             </figure>
         </section>
-        <section>
-            <div>
+        <section class="fakturační-údaje">
+            <address class="fakturační-údaje__adresa">
                 <h2>Fakturační údaje</h2>
-            </div>
+                <p class="heading">Logoipsum s.r.o.</p>
+                <p>Vymyšlená 642/37, 420 01 Liberec</p>
+                <p>IČ: 154785216</p>
+                <p>DIČ: CZ154785216</p>
+            </address>
+            <iframe class="fakturační-údaje__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.1152908228023!2d15.06519567497241!3d50.77343634284028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e85%3A0x30961e345e401253!2sSP%C5%A0SE%20a%20VO%C5%A0%20Liberec%201%2C%20Masarykova%203!5e0!3m2!1scs!2scz!4v1681327704069!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer class="footer">
