@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./hamburger.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="desktop.css">
     <title>Logoipsum</title>
 </head>
 <body>
@@ -45,8 +46,9 @@
                 <li class="nav__item">
                     <a class="nav__link" href="kontakt.html">Kontakt</a>
                 </li>
+                <div class="nav__stick"></div>
                 <li class="nav__item">
-                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                    <a href="#" class="btn zkušební-verze">Zkušební verze</a>
                 </li>
             </menu>
             <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
@@ -71,21 +73,21 @@
         </script>
     </header>
     <main>
-        <section class="úvod">
-            <div>
+        <section class="section">
+            <div class="section__představení">
                 <div class="section-img"><img src="./imgs/headway-5QgIuuBxKwM-unsplash.jpg" alt="Fotografie zobrazující management"></div>
-                <div class="úvod__popis">
-                    <h1 class="úvod__heading"><span class="orange">Řízení školy</span> ještě nebylo jednodušší</h1>
+                <div class="section__popis">
+                    <h1 class="section__heading"><span class="orange">Řízení školy</span> ještě nebylo jednodušší</h1>
                     <p>Představujeme Software pro <strong>řízení lidských zdrojů ve škole nebylo efektivnější</strong></p>
-                    <ul class="úvod__výhody">
-                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Počítá mzdové náklady</li>
-                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Generuje lidi</li>
-                        <li><i class="fa-solid fa-check orange úvod__tick"></i>Tvoří budoucnost</li>
+                    <ul class="section__výhody">
+                        <li><i class="fa-solid fa-check orange section__tick"></i>Počítá mzdové náklady</li>
+                        <li><i class="fa-solid fa-check orange section__tick"></i>Generuje lidi</li>
+                        <li><i class="fa-solid fa-check orange section__tick"></i>Tvoří budoucnost</li>
                     </ul>
-                    <a class="button" href="#">Vyzkoušejte demo</a>
+                    <a class="button button--úvod" href="#">Vyzkoušejte demo</a>
                 </div>
             </div>
-            <div class="úvod__sponzoři">
+            <div class="section__sponzoři">
                 <img src="./svgs/Logo4.svg" alt="">
                 <img src="./svgs/Logo6.svg" alt="">
                 <img src="./svgs/Logo2.svg" alt="">
@@ -116,28 +118,28 @@
             <div class="slider">
                 <div class="slider__item card">
                     <p class="card__heading heading">Administrace aplikace</p>
-                    <p class="card__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui libero voluptatum? Nobis inventore, rem repellat commodi nam voluptatibus, recusandae doloribus sunt debitis, est facere harum deserunt labore officia earum!</p>
+                    <p class="useknuté-paragrafy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui libero voluptatum? Nobis inventore, rem repellat commodi nam voluptatibus, recusandae doloribus sunt debitis, est facere harum deserunt labore officia earum!</p>
                 </div>
                 <div class="slider__item card">
                     <p class="card__heading heading">Tvorba organizační struktury</p>
-                    <p class="card__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo sunt velit corporis aperiam nostrum fugiat quas numquam dolorem, iure excepturi nemo officia odio, magnam eaque culpa nisi, et maxime!</p>
+                    <p class="useknuté-paragrafy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo sunt velit corporis aperiam nostrum fugiat quas numquam dolorem, iure excepturi nemo officia odio, magnam eaque culpa nisi, et maxime!</p>
                 </div>
                 <div class="slider__item card">
                     <p class="card__heading heading">Popisy pracovních míst</p>
-                    <p class="card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sequi animi dolorem placeat possimus obcaecati dignissimos doloribus, voluptatem ratione vero tenetur quam beatae veritatis dolores atque ea quasi saepe tempore.</p>
+                    <p class="useknuté-paragrafy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sequi animi dolorem placeat possimus obcaecati dignissimos doloribus, voluptatem ratione vero tenetur quam beatae veritatis dolores atque ea quasi saepe tempore.</p>
                 </div>
                 <div class="slider__item card">
                     <p class="card__heading heading">Firemní procesy</p>
-                    <p class="card__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut, laborum alias accusamus cum dolorem sit temporibus sunt, nisi quas quo officiis corporis doloribus nostrum ullam? Expedita facere odio consequuntur?</p>
+                    <p class="useknuté-paragrafy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut, laborum alias accusamus cum dolorem sit temporibus sunt, nisi quas quo officiis corporis doloribus nostrum ullam? Expedita facere odio consequuntur?</p>
                 </div>
             </div>
             <a class="button" href="#">Prozkoumat všechny funkce</a>
         </section>
         <section>
             <h2>Příběh</h2>
-            <figure>
+            <figure class="section__představení">
                 <div class="section-img"><img src="./imgs/příběh.jpg" alt="Fotografie dvou smějících se přátel dávajících si fist bump"></div>
-                <figcaption>
+                <figcaption class="section__popis">
                     <h3>Jsme dva - Honza a Tomáš</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi, consequatur error necessitatibus praesentium veritatis soluta quasi reprehenderit omnis consectetur.</p>
                     <p class="useknutý-paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reprehenderit aspernatur.</p>
@@ -147,11 +149,11 @@
         </section>
         <section>
             <h2>Napsali o nás</h2>
-            <div>
+            <div class="uživatelé">
                 <figure class="uživatel">
                     <div class="img-portrét"><img src="./imgs/portréty/MichaelaKomorousová.jpg" alt="Portrét Michaeli Komourousové"></div>
                     <figcaption class="uživatel__caption">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
+                        <p class="useknuté-paragrafy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
                         <p class="uživatel__jméno heading">Michaela Komorousová</p>
                         <p class="uživatel__zaměstnání">Personalista, Magna Exteriors s.r.o.</p>
                     </figcaption>
@@ -159,7 +161,7 @@
                 <figure class="uživatel">
                     <div class="img-portrét"><img src="./imgs/portréty/AlžbětaFormánková.jpg" alt="Portrét Alžběty Formánkové"></div>
                     <figcaption class="uživatel__caption">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
+                        <p class="useknuté-paragrafy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
                         <p class="uživatel__jméno heading">Alžběta Formánková</p>
                         <p class="uživatel__zaměstnání">Personalista, Magna Exteriors s.r.o.</p>
                     </figcaption>
@@ -167,7 +169,7 @@
                 <figure class="uživatel">
                     <div class="img-portrét"><img src="./imgs/portréty/AnnaSuchánková.jpg" alt="Portrét Anny Suchánkové"></div>
                     <figcaption class="uživatel__caption">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
+                        <p class="useknuté-paragrafy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptas, unde molestiae ab hic quae impedit laudantium veniam totam provident in rerum consequatur necessitatibus dolor delectus quibusdam aperiam ipsa.</p>
                         <p class="uživatel__jméno heading">Anna Suchánková</p>
                         <p class="uživatel__zaměstnání">Personalista, Magna Exteriors s.r.o.</p>
                     </figcaption>
@@ -237,7 +239,7 @@
                 <p>© Copyright 2023 Pslib.cz s.r.o.</p>
                 <a href="#">Cookies</a>
                 <a href="#">Podmínky užití</a>
-                <p>Vyrobilo: B interactive</p>
+                <p class="footer__tvůrce">Vyrobilo: B interactive</p>
         </div>
     </footer>
 </body>

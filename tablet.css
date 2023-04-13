@@ -1,5 +1,5 @@
 @media only screen and (min-width: 700px) {
-    .úvod__sponzoři {
+    .section__sponzoři {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -67,5 +67,9 @@
 
     .funkce-header__caption > * {
         text-align: left;
+    }
+
+    .header__text {
+        display: inline;
     }
 }

@@ -1,0 +1,132 @@
+@media only screen and (min-width: 1024px) {
+    .navbar__menu {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        background-color: white;
+    }
+
+    .navbar__hamburger {
+        display: none;
+    }
+
+    .navbar__menu--hidden {
+        transform: scaleY(1);
+    }
+
+    .nav__item {
+        margin: 0;
+    }
+
+    .nav__link {
+        padding: 0 16px;
+    }
+
+    .zkušební-verze {
+        color: white;
+        background-color: var(--orange-color);
+        padding: .75rem 1rem;
+        border-radius: 32px;
+    }
+
+    .nav__stick {
+        width: 2px;
+        height: 100%;
+        margin: 0 16px;
+        background-color: rgb(227, 227, 227);
+    }
+
+    .section__představení {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section__popis {
+        flex: 0 0 40%;
+    }
+
+    .section-img {
+        flex: 0 0 50%;
+    }
+
+    .header__upper-section {
+        margin: 0 10% 8px 10%;
+    }
+
+    .navbar {
+        margin: 0 10%;
+    }
+
+    section, footer {
+        padding: 32px 10%;
+    }
+
+    .button--úvod {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .výhody__item {
+        flex: 0 0 20%;
+    }
+
+    .slider {
+        overflow-x: auto;
+    }
+
+    .card {
+        flex: 0 0 calc(25% - 12px);
+    }
+
+    .useknutý-paragraf {
+        white-space: normal;
+    }
+
+    .uživatelé {
+        display: flex;
+    }
+
+    .aktuality__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aktualita {
+        flex: 0 0 45%;
+    }
+
+    .footer_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer__column {
+        flex: 0 0 20%;
+        text-align: left;
+    }   
+
+    .footer img {
+        margin-top: 26px;
+    }
+
+    .footer__heading {
+        text-align: left;
+    }
+
+    .footer__item {
+        text-align: left;
+    }
+
+    .footer__end-section {
+        flex-direction: row;
+    }
+
+    .footer__tvůrce {
+        margin-left: auto;
+    }
+}
