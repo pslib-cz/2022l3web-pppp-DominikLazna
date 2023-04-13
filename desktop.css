@@ -129,4 +129,36 @@
     .footer__tvůrce {
         margin-left: auto;
     }
+
+    .page-header {
+        padding: 0 10%;
+    }
+
+    .funkce-header {
+        padding: 0 10%;
+    }
+
+    .uživatel--kontakt {
+        display: flex;
+    }
+
+    .fakturační-údaje {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .fakturační-údaje__adresa, .fakturační-údaje__adresa h2 {
+        flex: 0 0 30%;
+        text-align: left;
+    }
+
+    .fakturační-údaje__mapa {
+        flex: 0 0 60%;
+        margin: 0;
+    }
+
+    .section-nopadding {
+        gap: 20%;
+    }
 }
