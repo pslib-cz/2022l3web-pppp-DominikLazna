@@ -161,4 +161,11 @@
     .section-nopadding {
         gap: 20%;
     }
+
+    .funkce-slider {
+        padding: 64px;
+        flex-wrap: wrap;
+        margin-left: calc(10% - 64px);
+        margin-right: calc(10% - 64px);
+    }
 }
