@@ -6,6 +6,7 @@
     --blue-color: rgb(45, 66, 117);
     --darkblue-color: rgb(22, 33, 60);
     --skyblue-color: rgb(142, 202, 230);
+    --opacity: rgba(0, 0, 0, 0);
 }
 
 *, *:visited {
@@ -57,7 +58,7 @@ h3 {
     position: absolute;
     width: 100vw;
     top: -8px;
-    left: -16px;
+    left: -5%;
     text-align: center;
     background-color: var(--lightgray-color);
     transform-origin: top;
@@ -67,6 +68,10 @@ h3 {
 
 .navbar__menu--hidden {
     transform: scaleY(0);
+}
+
+.navbar__arrow {
+    display: none;
 }
 
 .nav__item {
@@ -123,6 +128,11 @@ div > img {
     margin: 32px auto 0 auto;
 }
 
+.button:hover {
+    color: var(--blue-color);
+    background-color: var(--opacity);
+}
+
 .button--bottom-margin {
     margin-bottom: 32px;
 }
@@ -130,6 +140,11 @@ div > img {
 .button--alternative {
     color: var(--darkblue-color);
     background-color: white;
+}
+
+.button--alternative:hover {
+    color: white;
+    background-color: var(--orange-color);
 }
 
 .výhody {
@@ -147,6 +162,13 @@ div > img {
     font-weight: bold;
     color: var(--blue-color);
 }
+
+.výhody__bar {
+    width: 50%;
+    border: 1px dashed var(--skyblue-color);
+    margin: 32px auto 0 auto;
+}
+
 
 .slider {
     box-sizing: border-box;
@@ -224,6 +246,10 @@ div > img {
     font-size: 1.1rem;
 }
 
+.icon {
+    margin-right: .5rem;
+}
+
 .footer, .footer * {
     text-align: center;
     color: var(--skyblue-color);
@@ -285,6 +311,11 @@ div > img {
 
 .funkce-slider__card {
     position: relative;
+}
+
+
+.funkce-slider__card:hover h3 {
+    color: var(--darkblue-color);
 }
 
 .funkce-slider__card:hover::after {
