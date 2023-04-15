@@ -30,7 +30,7 @@
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
-            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+            <menu class="navbar__menu hamburger-menu-list toggler">
                 <li class="nav__item">
                     <a class="nav__link" href="index.html">Úvod</a>
                 </li>
@@ -46,30 +46,25 @@
                 <li class="nav__item">
                     <a class="nav__link" href="kontakt.html">Kontakt</a>
                 </li>
-                <div class="nav__stick"></div>
+                <li class="nav__stick"></li>
                 <li class="nav__item">
                     <a href="#" class="zkušební-verze">Zkušební verze</a>
                 </li>
             </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
+            <a class="hamburger-menu toggler" href="javascript:void(0)"><span class="hamburger-menu__bar"></span><span class="hamburger-menu__bar"></span><span class="hamburger-menu__bar"></span></a>
         </nav>
         <script>
-            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-            document.querySelector("body").onclick = (e) => {
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                    menu.classList.add("navbar__menu--hidden");
+                document.addEventListener("DOMContentLoaded", () => {
+                let hamelmnts = document.querySelectorAll(".toggler");
+                for (const btn of document.querySelectorAll(".hamburger-menu")) {
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        for (const element of hamelmnts) {
+                            element.classList.toggle("active");
+                        }  
+                    });
                 }
-            }
-            for (const btn of hamburgerButtons) {
-                btn.onclick = (event) => {
-                    event.stopPropagation()
-                    const menus = document.querySelectorAll(".hamburger-menu-list");
-                    for (const menu of menus) {
-                        menu.classList.toggle("navbar__menu--hidden");
-                    }
-                }
-            }
+            });
         </script>
     </header>
     <main>
@@ -212,16 +207,16 @@
     <footer class="footer">
         <div class="footer_nav">
             <ul class="footer__column">
-                <img src="./svgs/LogoBlueVariant.svg" alt="Logo společnosti">
-                <p class="footer__item">Pslib.cz s.r.o.</p>
-                <p class="footer__item">Masarykova 12345</p>
-                <p class="footer__item">460 00 Liberec</p>
-                <a class="footer__contact footer__item" href="tel:+420777666666"><i class="fa-solid fa-phone icon"></i>+420 777 666 666</a>
-                <a class="footer__contact footer__item" href="mailto:info@l3web.cz"><i class="fa-regular fa-envelope icon"></i>info@l3web.cz</a>
-                <div class="footer__item"><i class="fa-brands fa-youtube icon"></i><i class="fa-brands fa-linkedin-in icon"></i></div>
+                <li><img src="./svgs/LogoBlueVariant.svg" alt="Logo společnosti"></li>
+                <li class="footer__item">Pslib.cz s.r.o.</li>
+                <li class="footer__item">Masarykova 12345</li>
+                <li class="footer__item">460 00 Liberec</li>
+                <li><a class="footer__contact footer__item" href="tel:+420777666666"><i class="fa-solid fa-phone icon"></i>+420 777 666 666</a></li>
+                <li><a class="footer__contact footer__item" href="mailto:info@l3web.cz"><i class="fa-regular fa-envelope icon"></i>info@l3web.cz</a></li>
+                <li class="footer__item"><i class="fa-brands fa-youtube icon"></i><i class="fa-brands fa-linkedin-in icon"></i></li>
             </ul>
             <ul class="footer__column">
-                <h2 class="footer__heading">Videotutoriály</h2>
+                <li class="footer__heading">Videotutoriály</li>
                 <li class="footer__item"><a href="#">CSS</a></li>
                 <li class="footer__item"><a href="#">Animace</a></li>
                 <li class="footer__item"><a href="#">Stříhání videa</a></li>
@@ -230,7 +225,7 @@
                 <li class="footer__item"><a href="#">Všechna videa</a></li>
             </ul>
             <ul class="footer__column">
-                <h2 class="footer__heading">Podpora</h2>
+                <li class="footer__heading">Podpora</li>
                 <li class="footer__item"><a href="#">Přihlášení k účtu</a></li>
                 <li class="footer__item"><a href="#">Školení</a></li>
                 <li class="footer__item"><a href="#">FAQ - Časté dotazy</a></li>
@@ -238,7 +233,7 @@
                 <li class="footer__item"><a href="#">Videotutoriály</a></li>
             </ul>
             <ul class="footer__column">
-                <h2 class="footer__heading">Menu</h2>
+                <li class="footer__heading">Menu</li>
                 <li class="footer__item"><a href="#">Úvod</a></li>
                 <li class="footer__item"><a href="#">Funkce</a></li>
                 <li class="footer__item"><a href="#">Podpora</a></li>

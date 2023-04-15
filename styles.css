@@ -52,22 +52,25 @@ h3 {
 
 .navbar {
     margin: 0px 5%;
+    align-items: center;
 }
 
 .navbar__menu {
     position: absolute;
-    width: 100vw;
-    top: -8px;
+    top: 53px;
     left: -5%;
+    right: -5%;
+    padding: 8px 0;
     text-align: center;
     background-color: var(--lightgray-color);
     transform-origin: top;
-    transform: scaleY(1);
-    transition: .1s;
+    transform: scaleY(0);
+    transition: .25s;
 }
 
-.navbar__menu--hidden {
-    transform: scaleY(0);
+.navbar__menu.active {
+    transform: scaleY(1);
+    transition: .25s;
 }
 
 .navbar__arrow {
@@ -257,11 +260,17 @@ div > img {
 }
 
 .footer__heading {
+    font-size: 1.75rem;
+    font-weight: bold;
     margin-top: 32px;
 }
 
 .footer__item {
     margin: 8px 0;
+}
+
+.footer img {
+    text-align: left;
 }
 
 .footer__contact {

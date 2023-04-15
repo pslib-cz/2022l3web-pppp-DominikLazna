@@ -6,14 +6,11 @@
         align-items: center;
         gap: 0;
         background-color: white;
-    }
-
-    .navbar__hamburger {
-        display: none;
-    }
-
-    .navbar__menu--hidden {
         transform: scaleY(1);
+    }
+
+    .hamburger-menu {
+        display: none;
     }
 
     .nav__item {
@@ -21,7 +18,8 @@
     }
 
     .nav__link {
-        padding: 0 16px;
+        padding: 8px 16px;
+        border: none;
     }
 
     .zkušební-verze {
@@ -42,7 +40,7 @@
     .nav__stick {
         width: 2px;
         height: 100%;
-        margin: 0 16px;
+        margin: 0 24px 0 16px;
         background-color: rgb(227, 227, 227);
     }
 
@@ -67,6 +65,7 @@
 
     .navbar {
         margin: 0 10%;
+        align-items: stretch;
     }
 
     section, footer {
@@ -133,7 +132,6 @@
 
     .footer__column {
         flex: 0 0 20%;
-        text-align: left;
     }   
 
     .footer img {
@@ -154,6 +152,10 @@
 
     .footer__tvůrce {
         margin-left: auto;
+    }
+
+    .footer, .footer * {
+        text-align: left;
     }
 
     .page-header {
